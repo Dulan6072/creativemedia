@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff69b4;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for emphasis */
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff7200;
+    color: #fff;
+    padding: 12px 24px; /* Increase button padding for better touch targets */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #e66900;
+}
+
+/* Main section styles */
+main {
+    width: 100%; /* Full width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about,
+.services,
+.portfolio,
+.testimonials,
+.contact {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about h2,
+.services h2,
+.portfolio h2,
+.testimonials h2,
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-item,
+.portfolio-item,
+.testimonial-item {
+    margin-bottom: 20px;
+}
+
+.service-item h3,
+.portfolio-item h3,
+.testimonial-item h4 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p,
+.portfolio-item p,
+.testimonial-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-item {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.testimonial-item h4 {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Contact form styles */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff69b4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .about,
+    .services,
+    .portfolio,
+    .testimonials,
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .service-item h3,
+    .portfolio-item h3,
+    .testimonial-item h4 {
+        font-size: 1.5em;
+    }
+
+    .service-item p,
+    .portfolio-item p,
+    .testimonial-item p {
+        font-size: 1em;
+    }
+}
